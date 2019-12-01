@@ -7,8 +7,6 @@
 const double G=9.8;
 const double dt=0.01; //Step for th method //M_PI/300.0;
 const double eps=0.001;
-//theta''+g/l theta + q theta' = F_d sin(Omega t)
-
 class Pendulum
 {
 public:
@@ -75,7 +73,7 @@ void euler_cromer(Pendulum & p,double dt,double t)
 void initial_conditions(Pendulum & p)
 {
   p.q=0.5;
-  p.Fd=1.4;
+  std::cin>>p.Fd;
   p.Omega=0.666;
   p.L=G;
   p.W=0.0;
