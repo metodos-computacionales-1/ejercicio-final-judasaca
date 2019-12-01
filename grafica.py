@@ -8,5 +8,5 @@ w=datos[:,2]
 
 plt.figure()
 plt.scatter(y,w)
-plt.title("Fd=2.5")
-plt.savefig("phase1.png")
+plt.title("Fd=3.5")
+plt.savefig("phase3.png")
